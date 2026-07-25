@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nos Réalisations | RENOV</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+
+<style>
+    /*==GOOGLE FONT==*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:#f8f8f8;
+color:#222;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+img{
+
+width:100%;
+display:block;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.header{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+background:#fff;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.container{
+
+width:90%;
+max-width:1250px;
+
+margin:auto;
+
+height:85px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.logo{
+
+font-size:35px;
+font-weight:700;
+color:#222;
+
+}
+
+.logo span{
+
+color:#C89B3C;
+
+}
+
+.navbar{
+
+display:flex;
+gap:35px;
+
+}
+
+.navbar a{
+
+color:#222;
+font-weight:500;
+transition:.3s;
+
+}
+
+.navbar a:hover{
+
+color:#C89B3C;
+
+}
+
+.btn-header{
+
+padding:14px 28px;
+
+background:#C89B3C;
+
+color:#fff;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-header:hover{
+
+background:#222;
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+margin-top:85px;
+
+padding:120px 20px;
+
+background:#fff;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.hero span{
+
+color:#C89B3C;
+
+font-weight:600;
+
+letter-spacing:2px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin:20px 0;
+
+}
+
+.hero p{
+
+color:#666;
+
+font-size:18px;
+
+line-height:34px;
+
+}
+
+/*==========================
+TITLE
+==========================*/
+
+.title{
+
+text-align:center;
+
+margin:80px auto 50px;
+
+width:90%;
+max-width:800px;
+
+}
+
+.title h2{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.title p{
+
+color:#666;
+
+line-height:30px;
+
+}
+
+/*==========================
+GALLERY
+==========================*/
+
+.gallery{
+
+width:90%;
+
+max-width:1400px;
+
+margin:auto;
+
+padding-bottom:100px;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+grid-auto-rows:260px;
+
+gap:20px;
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+
+border-radius:18px;
+
+position:relative;
+
+cursor:pointer;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.gallery-item img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-item::before{
+
+content:'';
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.15);
+
+opacity:0;
+
+transition:.4s;
+
+z-index:1;
+
+}
+
+.gallery-item:hover::before{
+
+opacity:1;
+
+}
+
+.tall{
+
+grid-row:span 2;
+
+}
+
+.wide{
+
+grid-column:span 2;
+
+}
+/*==========================
+WHY CHOOSE US
+==========================*/
+
+.why-us{
+
+padding:100px 0;
+
+background:#fff;
+
+}
+
+.section-title{
+
+width:90%;
+
+max-width:800px;
+
+margin:auto;
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.section-title span{
+
+color:#C89B3C;
+
+font-weight:600;
+
+letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+margin:20px 0;
+
+}
+
+.section-title p{
+
+color:#666;
+
+line-height:30px;
+
+}
+
+.why-container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.why-box{
+
+background:#f9f9f9;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.why-box:hover{
+
+transform:translateY(-10px);
+
+background:#fff;
+
+box-shadow:0 20px 35px rgba(0,0,0,.12);
+
+}
+
+.why-box i{
+
+font-size:45px;
+
+color:#C89B3C;
+
+margin-bottom:20px;
+
+}
+
+.why-box h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.why-box p{
+
+color:#666;
+
+line-height:28px;
+
+}
+
+/*==========================
+CTA
+==========================*/
+
+.cta{
+
+padding:100px 20px;
+
+background:#1d1d1d;
+
+text-align:center;
+
+}
+
+.cta-content{
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+.cta h2{
+
+font-size:45px;
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+color:#ddd;
+
+line-height:32px;
+
+margin-bottom:35px;
+
+}
+
+.cta a{
+
+display:inline-block;
+
+padding:17px 40px;
+
+background:#C89B3C;
+
+color:#fff;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.cta a:hover{
+
+background:#fff;
+
+color:#222;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+/*/================ FOOTER =================*/
+
+.footer{
+
+background:#181818;
+
+padding-top:50px;
+
+margin-top:80px;
+
+}
+
+.footer-content{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:40px;
+
+padding-bottom:35px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-logo h2{
+
+font-size:30px;
+
+color:white;
+
+}
+
+.footer-logo span{
+
+color:#C89B3C;
+
+}
+
+.footer-logo p{
+
+margin-top:12px;
+
+color:#bbb;
+
+max-width:320px;
+
+line-height:28px;
+
+}
+
+.footer-contact{
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+}
+
+.footer-contact a{
+
+color:#ddd;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-contact a:hover{
+
+color:#C89B3C;
+
+}
+
+.footer-contact i{
+
+margin-right:10px;
+
+color:#C89B3C;
+
+}
+
+.footer-social{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.footer-social a{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+background:#2a2a2a;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-decoration:none;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+background:#C89B3C;
+
+transform:translateY(-5px);
+
+}
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+padding:18px;
+
+color:#999;
+
+font-size:14px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.title h2{
+
+font-size:34px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.cta h2{
+
+font-size:34px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+grid-auto-rows:260px;
+
+}
+
+.tall{
+
+grid-row:span 1;
+
+}
+
+.navbar{
+
+display:none;
+
+}
+
+.btn-header{
+
+display:none;
+
+}
+
+.container{
+
+height:75px;
+
+}
+
+.why-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!--================ HEADER =================-->
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+   <span>N</span>ova<span>R</span>enov
+</a>
+
+<nav class="navbar">
+
+<a href="index.html">Accueil</a>
+
+<a href="services.html">Services</a>
+
+<a href="A_propos.html">À propos</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<a href="contact.html" class="btn-header">
+
+Demander un devis
+
+</a>
+
+</div>
+
+</header>
+
+<!--================ HERO =================-->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span>NOS RÉALISATIONS</span>
+
+<h1>
+
+Découvrez nos réalisations
+
+</h1>
+
+<p>
+
+Depuis plusieurs années, nous accompagnons nos clients
+dans leurs projets de rénovation intérieure et extérieure.
+
+Découvrez quelques-uns de nos chantiers réalisés
+avec professionnalisme, précision et souci du détail.
+
+</p>
+
+</div>
+
+</section>
+
+<!--================ GALLERY =================-->
+
+<section class="gallery">
+
+<div class="title">
+
+<h2>
+
+Nos derniers projets
+
+</h2>
+
+<p>
+
+Chaque projet est réalisé avec passion, savoir-faire
+et des finitions de haute qualité.
+
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<!-- Photo 1 -->
+
+<div class="gallery-item">
+
+<img src="images/bardage.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 2 -->
+
+<div class="gallery-item tall">
+
+<img src="images/carlage.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 3 -->
+
+<div class="gallery-item">
+
+<img src="images/carlage3.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 4 -->
+
+<div class="gallery-item">
+
+<img src="images/cuzin4.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 5 -->
+
+<div class="gallery-item wide">
+
+<img src="images/cuzine2.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 6 -->
+
+<div class="gallery-item">
+
+<img src="images/cuzine1.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 7 -->
+
+<div class="gallery-item">
+
+<img src="images/cuzine2.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 8 -->
+
+<div class="gallery-item tall">
+
+<img src="images/cuzine3.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 9 -->
+
+<div class="gallery-item">
+
+<img src="images/cuzine5.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 10 -->
+
+<div class="gallery-item">
+
+<img src="images/moble.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 11 -->
+
+<div class="gallery-item wide">
+
+<img src="images/moble1.jpg.jpeg" alt="Projet">
+
+</div>
+
+<!-- Photo 12 -->
+
+<div class="gallery-item">
+
+<img src="images/moble3.jpg.jpeg" alt="Projet">
+
+</div>
+<!-- Photo 13 -->
+
+<div class="gallery-item">
+
+    <img src="images/pantur2.jpg.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 14 -->
+
+<div class="gallery-item tall">
+
+    <img src="images/pantur3.jpg.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 15 -->
+
+<div class="gallery-item">
+
+    <img src="images/pantur5.jpg.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 16 -->
+
+<div class="gallery-item wide">
+
+    <img src="images/panture1.jpg.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 17 -->
+
+<div class="gallery-item">
+
+    <img src="images/parke1.jpg.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 18 -->
+
+<div class="gallery-item">
+
+    <img src="images/port.jpg.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 19 -->
+
+<div class="gallery-item tall">
+
+    <img src="images/droje1.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 20 -->
+
+<div class="gallery-item">
+
+    <img src="images/droj2.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 21 -->
+
+<div class="gallery-item wide">
+
+    <img src="images/barkon.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 22 -->
+
+<div class="gallery-item">
+
+    <img src="images/bardag1.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 23 -->
+
+<div class="gallery-item">
+
+    <img src="images/facad4.jpeg" alt="Projet de rénovation">
+
+</div>
+
+<!-- Photo 24 -->
+
+<div class="gallery-item tall">
+
+    <img src="images/tiolit.jpeg" alt="Projet de rénovation">
+
+</div>
+
+</div>
+
+</section>
+<!--================ WHY CHOOSE US =================-->
+
+<section class="why-us">
+
+    <div class="section-title">
+
+        <span>POURQUOI NOUS CHOISIR</span>
+
+        <h2>Un travail de qualité pour chaque projet</h2>
+
+        <p>
+
+            Notre objectif est de garantir un résultat impeccable,
+            des finitions soignées et la satisfaction de chaque client.
+
+        </p>
+
+    </div>
+
+    <div class="why-container">
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-medal"></i>
+
+            <h3>Qualité garantie</h3>
+
+            <p>
+
+                Nous réalisons chaque chantier avec soin,
+                précision et des matériaux de qualité.
+
+            </p>
+
+        </div>
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-hammer"></i>
+
+            <h3>Savoir-faire</h3>
+
+            <p>
+
+                Une expérience dans plusieurs domaines :
+                peinture, parquet, cuisines, portes,
+                escaliers et rénovation complète.
+
+            </p>
+
+        </div>
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Respect des délais</h3>
+
+            <p>
+
+                Nous respectons les délais convenus
+                afin de livrer votre projet à temps.
+
+            </p>
+
+        </div>
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <h3>Service de confiance</h3>
+
+            <p>
+
+                Nous accompagnons nos clients
+                avec sérieux, transparence et professionnalisme.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CTA =================-->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>
+
+            Transformons votre projet ensemble
+
+        </h2>
+
+        <p>
+
+            Vous avez un projet de rénovation intérieure
+            ou extérieure ?
+
+            Contactez-nous dès aujourd'hui pour obtenir
+            un devis gratuit et sans engagement.
+
+        </p>
+
+        <a href="https://wa.me/32467797574?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis." >  Demander un devis <i class="fa-brands fa-whatsapp"></i></a>
+
+
+           
+
+        </a>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER =================-->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <h2>NovaRenov<span>.</span></h2>
+
+            <p>
+                Votre spécialiste en rénovation intérieure et extérieure en Belgique.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <a href="#">
+                <i class="fa-solid fa-phone"></i>
+                +32 467 79 75 74
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                Youans.Amrani@icloud.com
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-location-dot"></i>
+                Bruxelles, Belgique
+            </a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="hh"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="gg"><i class="fab fa-instagram"></i></a>
+
+            <a href="f"><i class="fab fa-tiktok"></i></a>
+
+            <a href="https://wa.me/32467797574?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis." > <i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 RENOV - Tous droits réservés.
+
+    </div>
+
+</footer>
+
+
+
+</a>
+
+</body>
+
+</html>

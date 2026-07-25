@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>À propos | NovaRenov</title>
+
+    <link rel="stylesheet" href="A_propos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!--================ HEADER =================-->
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            <span>N</span>ova<span>R</span>enov
+        </a>
+
+        <nav class="navbar">
+
+            <a href="index.html">Accueil</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="A_propos.html" class="active">À propos</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div class="header-btns">
+
+            <a href="tel:+32467797574" class="phone-btn">
+                <i class="fa-solid fa-phone"></i>
+                +32 467 79 75 74
+            </a>
+
+            <a href="https://wa.me/32467797574?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis."
+               class="devis-btn">
+                Devis Gratuit
+            </a>
+
+        </div>
+
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+
+</header>
+<!--==================================
+        PART 2 - ABOUT SECTION
+===================================-->
+
+<section class="about">
+
+   <div class="about-image">
+
+        <video autoplay muted loop playsinline>
+            <source src="images/vidyou.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+   <div class="about-text">
+
+        <span >
+
+            À PROPOS DE NOUS
+        </span>
+
+        <h1>
+            Votre partenaire de confiance
+            pour tous vos travaux de rénovation
+        </h1>
+
+        <p>
+            Basés en Belgique, nous réalisons tous vos projets de rénovation
+            intérieure et extérieure avec un travail propre, moderne et durable.
+        </p>
+
+        <p>
+            Notre équipe intervient dans le montage de cuisine,
+            le carrelage, la peinture, la menuiserie,
+            les façades ainsi que les rénovations complètes.
+        </p>
+
+      <div class="about-box">
+          <div class="item">
+
+                <i class="fa-solid fa-check"></i>
+
+                <h3>Travail soigné</h3>
+
+                <p>
+                    Chaque détail est réalisé avec précision.
+                </p>
+
+            </div>
+
+            <div class="item">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Équipe qualifiée</h3>
+
+                <p>
+                    Des professionnels expérimentés à votre service.
+                </p>
+
+            </div>
+
+           <div class="item">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Respect des délais</h3>
+
+                <p>
+                    Livraison rapide dans les délais convenus.
+                </p>
+
+            </div>
+
+           <div class="item">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>Qualité garantie</h3>
+
+                <p>
+                    Des finitions professionnelles et durables.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ FOOTER =================-->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <h2>NovaRenov<span>.</span></h2>
+
+            <p>
+                Votre spécialiste en rénovation intérieure
+                et extérieure en Belgique.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <a href="tel:+32467797574">
+                <i class="fa-solid fa-phone"></i>
+                +32 467 79 75 74
+            </a>
+
+            <a href="mailto:Youans.Amrani@icloud.com">
+                <i class="fa-solid fa-envelope"></i>
+                Youans.Amrani@icloud.com
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-location-dot"></i>
+                Bruxelles, Belgique
+            </a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://wa.me/32467797574">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 NovaRenov - Tous droits réservés.
+
+    </div>
+
+</footer>
+
+<!--================ MENU MOBILE =================-->
+
+<script>
+
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+
+menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
+
+document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+    });
+});
+
+</script>
+
+</body>
+</html>
